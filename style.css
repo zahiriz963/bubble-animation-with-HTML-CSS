@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    background: #3a6186;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #203446, #400010); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+}
+
+
+.bubles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.buble {
+    position: absolute;
+    bottom: -100px;
+    background-color: #fff;
+    opacity: .5;
+    border-radius: 50%;
+    animation: flying 4s linear infinite;
+}
+
+.buble:nth-child(1) {
+    left: 0;
+    width: 50px;
+    height: 50px;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+.buble:nth-child(2) {
+    left: 20%;
+    width: 30px;
+    height: 30px;
+    animation-duration: 8s;
+    animation-delay: 1.5s;
+}
+
+.buble:nth-child(3) {
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+}
+
+.buble:nth-child(4) {
+    left: 45%;
+    width: 100px;
+    height: 100px;
+    animation-duration: 10s;
+    animation-delay: 0s;
+}
+
+.buble:nth-child(5) {
+    left: 30%;
+    width: 40px;
+    height: 40px;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+.buble:nth-child(6) {
+    left: 40%;
+    width: 70px;
+    height: 70px;
+    animation-duration: 5s;
+    animation-delay: 2.5s;
+}
+
+.buble:nth-child(7) {
+    left: 35%;
+    width: 90px;
+    height: 90px;
+    animation-duration: 6s;
+    animation-delay: 0.5s;
+}
+
+.buble:nth-child(8) {
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+}
+
+.buble:nth-child(9) {
+    left: 60%;
+    width: 80px;
+    height: 80px;
+    animation-duration: 5s;
+    animation-delay: 2.5s;
+}
+
+.buble:nth-child(10) {
+    left: 55%;
+    width: 20px;
+    height: 20px;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.buble:nth-child(11) {
+    left: 25%;
+    width: 50px;
+    height: 50px;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+
+.buble:nth-child(12) {
+    left: 10%;
+    width: 65px;
+    height: 65px;
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+}
+
+.buble:nth-child(13) {
+    left: 60%;
+    width: 55px;
+    height: 55px;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+}
+
+.buble:nth-child(14) {
+    left: 75%;
+    width: 45px;
+    height: 45px;
+    animation-duration: 6s;
+    animation-delay: 0.5s;
+}
+
+.buble:nth-child(15) {
+    left: 15%;
+    width: 80px;
+    height: 80px;
+    animation-duration: 4s;
+    animation-delay: 2.5s;
+}
+
+.buble:nth-child(16) {
+    left: 65%;
+    width: 90px;
+    height: 90px;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+
+@keyframes flying {
+    0%{
+        bottom: -100px;
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(100px);
+    }
+
+    100%{
+        bottom: 100%;
+        transform: translateX(0);
+    }
+}
